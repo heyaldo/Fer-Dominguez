@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $body-white;
+}
+
+// Basic styles
+button, a.draw, a.draw2, a.draw3 {
+    font-family: SofiaProRegular;
+    background: $body-black;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    // Using inset box-shadow instead of border for sizing simplicity
+    box-shadow: inset 0 0 0 2px $body-black;
+    color: $body-white !important;
+    font-size: inherit;
+    font-weight: 700;
+
+    // Required, since we're setting absolute on pseudo-elements
+    position: relative;
+    vertical-align: middle;
+
+    &::before,
+    &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+.draw, a.draw {
+    transition: color 0.25s;
+
+    &::before,
+    &::after {
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    }
+
+    // This covers the top & right borders (expands right, then down)
+    &::before {
+    top: 0;
+    left: 0;
+    }
+
+    // And this the bottom & left borders (expands left, then up)
+    &::after {
+    bottom: 0;
+    right: 0;
+    }
+    
+    &:hover {
+    color: $body-black !important;
+    background: $body-pink;
+    transition: all 1.0s;
+    text-decoration: none;
+    }
+
+    // Hover styles
+    &:hover::before,
+    &:hover::after {
+    width: 100%;
+    height: 100%;
+    }
+
+    &:hover::before {
+    border-top-color: $body-pink; // Make borders visible
+    border-right-color: $body-pink;
+    transition:
+        width 0.25s ease-out, // Width expands first
+        height 0.25s ease-out 0.25s; // And then height
+    }
+
+    &:hover::after {
+    border-bottom-color: $body-pink; // Make borders visible
+    border-left-color: $body-pink;
+    transition:
+        border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+        width 0.25s ease-out 0.5s, // And then exanding width
+        height 0.25s ease-out 0.75s; // And finally height
+    }
+}
+
+.draw2, a.draw2 {
+    transition: color 0.25s;
+
+    &::before,
+    &::after {
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    }
+
+    // This covers the top & right borders (expands right, then down)
+    &::before {
+    top: 0;
+    left: 0;
+    }
+
+    // And this the bottom & left borders (expands left, then up)
+    &::after {
+    bottom: 0;
+    right: 0;
+    }
+    
+    &:hover {
+    color: $body-black !important;
+    background: $body-white;
+    transition: all 1.0s;
+    text-decoration: none;
+    }
+
+    // Hover styles
+    &:hover::before,
+    &:hover::after {
+    width: 100%;
+    height: 100%;
+    }
+
+    &:hover::before {
+    border-top-color: $body-pink; // Make borders visible
+    border-right-color: $body-pink;
+    transition:
+        width 0.25s ease-out, // Width expands first
+        height 0.25s ease-out 0.25s; // And then height
+    }
+
+    &:hover::after {
+    border-bottom-color: $body-pink; // Make borders visible
+    border-left-color: $body-pink;
+    transition:
+        border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+        width 0.25s ease-out 0.5s, // And then exanding width
+        height 0.25s ease-out 0.75s; // And finally height
+    }
+}
+
+button.draw3, a.draw3, input.draw3 {
+    background: $body-pink;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 5em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    // Using inset box-shadow instead of border for sizing simplicity
+    box-shadow: inset 0 0 0 2px $body-pink;
+    color: $body-black;
+    font-size: inherit;
+    font-weight: 700;
+
+    // Required, since we're setting absolute on pseudo-elements
+    position: relative;
+    vertical-align: middle;
+
+    &::before,
+    &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+.draw3, a.draw3, input.draw3 {
+    transition: color 0.25s;
+
+    &::before,
+    &::after {
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    }
+
+    // This covers the top & right borders (expands right, then down)
+    &::before {
+    top: 0;
+    left: 0;
+    }
+
+    // And this the bottom & left borders (expands left, then up)
+    &::after {
+    bottom: 0;
+    right: 0;
+    }
+    
+    &:hover {
+    color: $body-black !important;
+    background: $body-white;
+    transition: all 1.0s;
+    text-decoration: none;
+    }
+
+    // Hover styles
+    &:hover::before,
+    &:hover::after {
+    width: 100%;
+    height: 100%;
+    }
+
+    &:hover::before {
+    border-top-color: $body-pink; // Make borders visible
+    border-right-color: $body-pink;
+    transition:
+        width 0.25s ease-out, // Width expands first
+        height 0.25s ease-out 0.25s; // And then height
+    }
+
+    &:hover::after {
+    border-bottom-color: $body-pink; // Make borders visible
+    border-left-color: $body-pink;
+    transition:
+        border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+        width 0.25s ease-out 0.5s, // And then exanding width
+        height 0.25s ease-out 0.75s; // And finally height
+    }
+}
+
+.mens-bg {
+    background-color: $body-blue !important;
+}
+
+.mens-bg-white {
+    background-color: $body-white !important;
+}
+
+.mens-bg-gray {
+    background-color: $body-gray !important;
+}
+
+.mens-blue {
+    color: $body-blue !important;
+}
+
+.mens-gold {
+    color: $body-gold !important;
+    font-family: Bodoni72 !important;
+}
+
+.mens-white {
+    color: $body-white !important;
+}
+
+.mens-styling {
+    color: $body-blue !important;
+    font-family: Bodoni72 !important;
+}
+
+.up {
+    text-transform: uppercase;
+}
+
+.blogcase {
+    transform: translate(-50%, 120%) !important;    
+}
+
+button.btn-mens, a.btn-mens, input.btn-mens {
+    font-family: SofiaProRegular;
+    background: $body-gold;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    // Using inset box-shadow instead of border for sizing simplicity
+    box-shadow: inset 0 0 0 2px $body-gold;
+    color: $body-white !important;
+    font-size: inherit;
+    font-weight: 700;
+
+    // Required, since we're setting absolute on pseudo-elements
+    position: relative;
+    vertical-align: middle;
+
+    &::before,
+    &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+.btn-mens, a.btn-mens, input.btn-mens {
+    transition: color 0.25s;
+
+    &::before,
+    &::after {
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    }
+
+    // This covers the top & right borders (expands right, then down)
+    &::before {
+    top: 0;
+    left: 0;
+    }
+
+    // And this the bottom & left borders (expands left, then up)
+    &::after {
+    bottom: 0;
+    right: 0;
+    }
+    
+    &:hover {
+    color: $body-white !important;
+    background: $body-blue;
+    transition: all 1.0s;
+    text-decoration: none;
+    }
+
+    // Hover styles
+    &:hover::before,
+    &:hover::after {
+    width: 100%;
+    height: 100%;
+    }
+
+    &:hover::before {
+    border-top-color: $body-gold; // Make borders visible
+    border-right-color: $body-gold;
+    transition:
+        width 0.25s ease-out, // Width expands first
+        height 0.25s ease-out 0.25s; // And then height
+    }
+
+    &:hover::after {
+    border-bottom-color: $body-gold; // Make borders visible
+    border-left-color: $body-gold;
+    transition:
+        border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+        width 0.25s ease-out 0.5s, // And then exanding width
+        height 0.25s ease-out 0.75s; // And finally height
+    }
+}
+
+button.btn-mens2, a.btn-mens2 {
+    font-family: SofiaProRegular;
+    background: $body-gold;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    // Using inset box-shadow instead of border for sizing simplicity
+    box-shadow: inset 0 0 0 2px $body-gold;
+    color: $body-white !important;
+    font-size: inherit;
+    font-weight: 700;
+
+    // Required, since we're setting absolute on pseudo-elements
+    position: relative;
+    vertical-align: middle;
+
+    &::before,
+    &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+.btn-mens2, a.btn-mens2 {
+    transition: color 0.25s;
+
+    &::before,
+    &::after {
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    }
+
+    // This covers the top & right borders (expands right, then down)
+    &::before {
+    top: 0;
+    left: 0;
+    }
+
+    // And this the bottom & left borders (expands left, then up)
+    &::after {
+    bottom: 0;
+    right: 0;
+    }
+    
+    &:hover {
+    color: $body-gold !important;
+    background: $body-white;
+    transition: all 1.0s;
+    text-decoration: none;
+    }
+
+    // Hover styles
+    &:hover::before,
+    &:hover::after {
+    width: 100%;
+    height: 100%;
+    }
+
+    &:hover::before {
+    border-top-color: $body-gold; // Make borders visible
+    border-right-color: $body-gold;
+    transition:
+        width 0.25s ease-out, // Width expands first
+        height 0.25s ease-out 0.25s; // And then height
+    }
+
+    &:hover::after {
+    border-bottom-color: $body-gold; // Make borders visible
+    border-left-color: $body-gold;
+    transition:
+        border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+        width 0.25s ease-out 0.5s, // And then exanding width
+        height 0.25s ease-out 0.75s; // And finally height
+    }
+}
+
+.button-a {
+    margin-bottom: 25px !important ;
+}

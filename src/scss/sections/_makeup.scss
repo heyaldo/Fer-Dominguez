@@ -1,0 +1,140 @@
+.makeup {
+    background-color: $body-gray;
+    padding: 35px 0;
+    position: relative;
+
+    &__box {
+        position: relative;
+
+        &__title {
+            color: $body-pink;
+            text-transform: uppercase;
+            font-size: 60px;
+            display: inline-block;
+            font-family: Bodoni72;
+        }
+
+        &__sub {
+            position: absolute;
+            top: -30%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            color: $body-black;
+            width: 100%;
+            font-family: AnjelSignature;
+            font-size: 3.1rem;
+        }
+    }
+
+    .img-round {
+        position: relative;
+        height: 0;
+        padding-bottom: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+      
+        > img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    }
+
+    &__photos {
+        margin: 35px 0;
+        position: relative;
+
+        &__textura {
+            width: 20%;
+            height: 20%;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            transform: translate(0%, 0%);
+        }
+
+        &__card {
+            font-family: SofiaProRegular;
+            position: relative;
+
+            p { 
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 24px;
+            }
+            
+            &__title {
+
+                background-color: $body-pink;
+                
+                p {
+                    text-transform: uppercase;
+                    margin: 2rem auto;
+                    text-align: center;
+                    font-size: 24px;
+                }
+            }
+
+            &__textura1 {
+                width: 45%;
+                height: 15%;
+                position: absolute;
+                bottom: 40%;
+                left: -2%;
+                transform: translate(0%, 0%);
+                z-index: 2;
+            }
+
+            &__textura2 {
+                width: 45%;
+                height: 15%;
+                position: absolute;
+                bottom: 47%;
+                right: -8%;
+                transform: translate(0%, 0%);
+                z-index: 2;
+            }
+        }
+
+        &__textura2 {
+            width: 20%;
+            height: 35%;
+            position: absolute;
+            bottom: -10%;
+            left: -2%;
+            transform: translate(0%, 0%);
+        }
+
+        &__select {
+            position: relative;
+            margin: 0 auto;
+
+            select {
+                display: block;
+                margin: 10px auto;
+                background-color: $body-pink;
+                padding: 10px;
+                font-family: SofiaProRegular;
+                border: none;
+                /*box-shadow: 0 0 15px rgba(0,0,0, .5);
+                -webkit-appearance: button;*/
+                outline: none;
+
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .makeup {
+        
+      &__box {
+
+        
+        &__sub {
+            font-size: 3rem;
+        }
+      }
+    }
+}

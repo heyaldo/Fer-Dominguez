@@ -1,0 +1,37 @@
+footer {
+    .social-item {
+        padding: 5px 30px;
+        margin: 20px 0;
+
+        &__text {
+            display: inline-block;
+            font-family: SofiaProRegular;
+        }
+    }
+
+    .social-item:link, .social-item:active {
+        color: $body-black;
+    }
+    
+    .social-item:hover, .social-item:visited {
+        color: $body-black;
+        text-decoration: none;
+    } 
+}
+
+.footercase {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 499px) {
+    footer {
+        .social-item {
+            text-align: center;
+            margin: 5px 0;
+        }    
+    }
+
+    .footercase {
+        margin: 10px 0;
+    }
+}

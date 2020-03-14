@@ -1,0 +1,66 @@
+// Fonts
+@font-face {
+  font-family: SofiaProRegular;
+  src: url("../fonts/font/SofiaProRegular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/font/SofiaProRegular?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/font/SofiaProRegular.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/font/SofiaProRegular.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/font/SofiaProRegular.woff") format("woff"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: SofiaProLight;
+  src: url("../fonts/font/SofiaProLight.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/font/SofiaProLight?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: url("../fonts/font/SofiaProLight.svg") format("svg"); /* Legacy iOS */
+  src: url('../fonts/font/SofiaProLight.ttf') format('opentype'); /* Safari, Android, iOS */
+  src: url("../fonts/font/SofiaProLight.woff") format("woff"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: shelline;
+  src: url("../fonts/font/shelline.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/font/shelline?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: url("../fonts/font/shelline.svg") format("svg"); /* Legacy iOS */
+  src: url('../fonts/font/shelline.ttf') format('opentype'); /* Safari, Android, iOS */
+  src: url("../fonts/font/shelline.woff") format("woff"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: Bodoni72;
+  src: url("../fonts/font/Bodoni72.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/font/Bodoni72?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: url("../fonts/font/Bodoni72.svg") format("svg"); /* Legacy iOS */
+  src: url('../fonts/font/Bodoni72.ttf') format('opentype'); /* Safari, Android, iOS */
+  src: url("../fonts/font/Bodoni72.woff") format("woff"); /* Modern Browsers */
+}
+
+@font-face {
+  font-family: AnjelSignature;
+  src: url("../fonts/font/AnjelSignature.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/font/AnjelSignature?#iefix") format("embedded-opentype"); /* IE6-IE8 */
+  src: url("../fonts/font/AnjelSignature.svg") format("svg"); /* Legacy iOS */
+  src: url('../fonts/font/AnjelSignature.ttf') format('opentype'); /* Safari, Android, iOS */
+  src: url("../fonts/font/AnjelSignature.woff") format("woff"); /* Modern Browsers */
+}
+
+.SofiaProRegular {
+  font-family: SofiaProRegular;
+}
+
+.SofiaProLight {
+  font-family: SofiaProLight;
+}
+
+.shelline {
+  font-family: shelline;
+}
+
+.Bodoni72 {
+  font-family: Bodoni72;
+}
+
+.AnjelSignature {
+  font-family: AnjelSignature;
+}
+

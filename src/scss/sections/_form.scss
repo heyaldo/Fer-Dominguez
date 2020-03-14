@@ -1,0 +1,102 @@
+.form {
+    background-color: $body-white;
+    padding-top: 35px;
+    position: relative;
+
+    &__box {
+        position: relative;
+
+        &__title {
+            color: $body-pink;
+            text-transform: uppercase;
+            font-size: 60px;
+            display: inline-block;
+            font-family: Bodoni72;
+        }
+
+        &__sub {
+            position: absolute;
+            top: -20%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            color: $body-black;
+            width: 100%;
+            font-family: AnjelSignature;
+            font-size: 3rem;
+        }
+    }
+
+    &__style {
+        /*width: 70%;
+        margin: 0 auto;*/
+
+        label {
+            /*margin-right: 74%;*/
+        }
+    }
+
+    .cot {
+
+        padding: 20px 0;
+        display: block;
+        margin: 0 auto;
+
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+
+    .rem {
+        p {
+            margin-bottom: 0rem;
+        }
+    }
+
+    &__textura1 {
+        width: 7%;
+        height: 20%;
+        position: absolute;
+        bottom: 0%;
+        left: 23%;
+        transform: translate(0%, 0%);
+    }
+    
+    &__textura2 {
+        width: 20%;
+        height: 35%;
+        position: absolute;
+        bottom: 5%;
+        right: 1%;
+        transform: translate(0%, 0%);
+    }
+    
+}
+
+@media screen and (max-width: 499px) {
+    .form {
+
+        &__box {
+            margin-bottom: 15px;
+    
+            &__title {
+                color: $body-pink;
+                text-transform: uppercase;
+                display: inline-block;
+                font-family: Bodoni72;
+                font-size: 45px;
+            }
+    
+            &__sub {
+                position: absolute;
+                bottom: 15%;
+                left: 50%;
+                transform: translate(-50%, 100%);
+                color: $body-black;
+                width: 100%;
+                font-family: AnjelSignature;
+                font-size: 30px;
+            }
+        }
+    }
+}
+

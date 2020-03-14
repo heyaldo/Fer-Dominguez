@@ -1,0 +1,18 @@
+.distortion {
+    height: 550px;
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .distortion {
+        height: 420px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .distortion {
+        height: 375px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,191 @@
+.look {
+    position: relative;
+    background-color: $body-pink;
+    padding: 35px 0;
+
+    &__header {
+        background-color: $body-white;
+        display: inline-block;
+        padding: 15px;
+        position: relative;
+        
+        &__title {
+            color: $body-pink;
+            text-transform: uppercase;
+            font-size: 60px;
+            font-family: Bodoni72;
+        }
+
+        &__sub {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            color: $body-black;
+            width: 100%;
+            font-family: AnjelSignature;
+            font-size: 3rem;
+        }
+    }
+
+    &__textbox {
+        margin: 20px 0;
+        position: relative;
+
+        &__p {
+            font-size: 17px;
+            width: 75%;
+            margin: 20px auto;
+        }
+
+        &__h3 {
+            font-family: AnjelSignature;
+            text-align: center;
+            font-size: 2.6rem !important;
+            margin-bottom: 0px !important;
+        }
+
+        &__h4 {
+            font-family: Bodoni72;
+            text-align: center;
+            font-size: 1.8rem !important;
+            margin-bottom: 0px !important;
+        }
+
+        &__select {
+            position: relative;
+            margin: 0 auto;
+
+            select {
+                display: block;
+                margin: 0 auto;
+                background-color: $body-gray;
+                padding: 10px;
+                font-family: SofiaProRegular;
+                border: none;
+                /*box-shadow: 0 0 15px rgba(0,0,0, .5);
+                -webkit-appearance: button;*/
+                outline: none;
+                margin-bottom: 25px;
+            } 
+        }
+    }
+
+    &__panel {
+        position: relative;
+        height: 618px;
+        width: 100%;
+
+        &__img {
+            height: 100%;
+            width: 100%;
+        }
+
+        &__textura1 {
+            width: 21%;
+            height: 11%;
+            position: absolute;
+            top: -4%;
+            right: 0%;
+            transform: translate(0%, 0%);
+            z-index: 1;
+        }
+
+        &__textura2 {
+            width: 20%;
+            height: 30%;
+            position: absolute;
+            bottom: 0%;
+            left: -18%;
+            transform: translate(0%, 0%);
+            z-index: 1;
+        }
+    }
+
+    &__textura3 {
+        width: 11%;
+        height: 37%;
+        position: absolute;
+        top: 70%;
+        left: 0%;
+        /*transform: translate(0%, 0%);*/
+        z-index: 1;
+    }
+
+}
+
+.mens2 {
+    background-color: $body-white !important;        
+    color: $body-gold;        
+}
+
+@media screen and (max-width: 768px) {
+    .look {
+        &__header {
+            
+            &__title {
+                font-size: 48px;
+            }
+
+            &__sub {
+                transform: translate(-50%, 100%);
+                font-size: 2.3rem;
+            }
+        }  
+
+        &__panel {
+            height: 100%;
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .look {
+        &__header {
+
+            &__title {
+                font-size: 57px;
+            }
+
+            &__sub {
+                font-size: 45px;
+                transform: translate(-50%, 100%);
+            }    
+        }
+
+        &__textbox {
+
+            &__p {
+                width: 100%;
+            }
+        }
+
+        &__panel {
+            padding-top: 30px;
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .look {
+        &__header {
+
+            &__title {
+                font-size: 48px;
+            }
+            
+            &__sub {
+                font-size: 37px;
+                transform: translate(-50%, 100%);
+            } 
+        }
+    }
+}

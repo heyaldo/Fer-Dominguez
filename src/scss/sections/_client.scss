@@ -1,0 +1,84 @@
+.client {
+    position: relative;
+    background-color: $body-white;
+    padding: 35px 0;
+
+    &__header {
+        background-color: $body-white;
+        display: inline-block;
+        padding: 15px;
+        position: relative;
+        
+        &__title {
+            color: $body-pink;
+            text-transform: uppercase;
+            font-size: 60px;
+            font-family: Bodoni72;
+        }
+
+        &__sub {
+            position: absolute;
+            bottom: 40%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            color: $body-black;
+            width: 100%;
+            font-family: AnjelSignature;
+            font-size: 4.1rem;
+        }
+    }
+
+    .textura8 {
+        height: 60%;
+        width: 40%;
+        position: absolute;
+        top: 40%;
+        right: -2.7%;
+        transform: translate(-0%, -0%);
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .client {
+        
+        .textura8 {
+            right: -1.7%;
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .client {
+        &__header {
+
+            &__title {
+                font-size: 27px;
+            }
+
+            &__sub {
+                font-size: 30px;
+            }    
+        }
+
+        .textura8 {
+            right: -4%;
+        }
+  
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .client {
+        &__header {
+
+            &__title {
+                font-size: 24px;
+            }  
+            
+            &__sub {
+                font-size: 33px;
+            }
+        }
+    }
+}

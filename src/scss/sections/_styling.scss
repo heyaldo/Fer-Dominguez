@@ -1,0 +1,139 @@
+.styling {
+    position: relative;
+    background-color: $body-white;
+    padding: 35px 0;
+
+    &__header {
+        display: inline-block;
+        padding: 15px;
+        position: relative;
+        margin: 0 auto;
+        
+        &__title {
+            color: $body-black;
+            font-size: 60px;
+            font-family: AnjelSignature;
+        }
+
+        &__sub {
+            width: 70%;
+            font-size: 22px;
+            margin: 30px auto;
+            font-family: SofiaProRegular;
+        }
+    }
+
+    &__pictures {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    .item{
+        left: 0;
+        top: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .item img{
+        -webkit-transition: 0.6s ease;
+          transition: 0.6s ease;
+        height: 250px;
+          
+    }
+    .item img:hover{
+        -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+
+    }
+    .img-thumbnail{
+        border:0px;
+        border-radius:0px;
+    }
+
+    .b_cotiza {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    &__textura3 {
+        width: 14%;
+        height: 40%;
+        position: absolute;
+        top: 81%;
+        left: 0%;
+        /*transform: translate(0%, 0%);*/
+        z-index: 1;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .styling {
+        &__header {
+            
+            &__sub {
+                width: 100%;
+            }    
+        }
+
+        &__pictures {
+            width: 100%;
+        }
+
+        .item img{
+            height: 339px;
+            margin: 15px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .styling {
+        &__header {
+            
+            &__sub {
+                width: 100%;
+            }    
+        }
+
+        &__pictures {
+            width: 100%;
+        }
+
+        .b_cotiza {
+            padding-left: 95px;
+            padding-right: 95px;
+        }
+
+        .item img{
+            height: 315px;
+            margin: 7px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .styling {
+        &__header {
+            
+            &__sub {
+                width: 100%;
+            }    
+        }
+
+        &__pictures {
+            width: 100%;
+        }
+
+        .b_cotiza {
+            padding-left: 85px;
+            padding-right: 85px;
+        }
+
+        .item img{
+            height: 280px;
+            margin: 5px 0;
+        }
+    }
+}

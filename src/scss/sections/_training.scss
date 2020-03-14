@@ -1,0 +1,214 @@
+.training {
+    background-color: $body-white;
+    padding: 35px 0;
+    position: relative;
+
+    &__panel2 {
+        height: 75%;
+        position: relative;
+        margin-top: 80px;
+
+        &__square {
+            width: 54%;
+            height: 60%;
+            background-color: $body-pink;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+        }
+
+        &__img {
+            width: 75%;
+            height: 91%;
+            position: absolute;
+            top: 0%;
+            left: 20%;
+        }
+
+        &__textura1 {
+            width: 10%;
+            height: 17%;
+            position: absolute;
+            bottom: 0%;
+            right: 30%;
+        }
+
+        &__textura2 {
+            width: 30%;
+            height: 30%;
+            position: absolute;
+            bottom: 10%;
+            right: 1%;
+        }
+
+        &__textura3 {
+            width: 35%;
+            height: 32%;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+    }
+
+    &__box {
+        position: relative;
+
+        &__title {
+            color: $body-pink;
+            text-transform: uppercase;
+            font-size: 60px;
+            display: inline-block;
+            font-family: Bodoni72;
+        }
+
+        &__sub {
+            position: absolute;
+            bottom: 40%;
+            left: 50%;
+            transform: translate(-50%, 100%);
+            color: $body-black;
+            width: 100%;
+            font-family: AnjelSignature;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__textbox {
+        margin: 15px 0;
+        position: relative;
+
+        &__p {
+            font-size: 17px;
+            text-align: center;
+            width: 85%;
+            margin: 15px auto;
+        }
+
+        &__select {
+            position: relative;
+            margin: 0 auto;
+
+            select {
+                display: block;
+                margin: 0 auto;
+                background-color: $body-pink;
+                padding: 10px;
+                font-family: SofiaProRegular;
+                border: none;
+                /*box-shadow: 0 0 15px rgba(0,0,0, .5);
+                -webkit-appearance: button;*/
+                outline: none;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .training {
+      padding: 25px 0;
+  
+      &__panel2 {
+            height: 45%;
+            margin-top: 50%;
+
+            &__img {
+                width: 55%;
+                height: 91%;
+                position: absolute;
+                top: 0%;
+                left: 25%;
+            }
+    
+      }
+        
+      &__box {
+
+        &__title {
+            font-size: 45px;
+        }
+
+        &__sub {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            transform: translate(1%, 100%);
+            color: $body-black;
+            width: 100%;
+            font-family: AnjelSignature;
+            font-size: 30px;
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .training {
+        &__box {
+            margin-bottom: 30px;
+
+            &__title {
+                font-size: 43px;
+            }
+
+            &__sub {
+                transform: translate(0%, 95%);
+                font-size: 35px;
+            }
+        }
+
+        &__textbox {
+
+            &__p {
+                width: 100%;
+            }
+        }
+
+        &__panel2 {
+            height: 350px;
+            margin-top: 0px;
+
+            &__square {
+                bottom: 10%;
+                right: 20%;
+            }
+    
+            &__img {
+                height: 75%;
+                left: 15%;
+            }
+    
+            &__textura1 {
+                bottom: 11%;
+                right: 49%;
+            }
+    
+            &__textura2 {
+                bottom: 18%;
+                right: 20%;
+            }
+    
+            &__textura3 {
+                top: 0%;
+                left: 0%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .training {
+        &__box {
+
+            &__title {
+                font-size: 40px;
+            }
+
+            &__sub {
+                transform: translate(0%, 85%);
+                font-size: 30px;
+            }
+        }
+    }
+}

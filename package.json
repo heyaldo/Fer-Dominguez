@@ -1,0 +1,25 @@
+{
+  "name": "fer-dominguez",
+  "version": "1.0.0",
+  "description": "Fer Dominguez Asesoria de moda | Asesoria de moda online y presencial",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aldo Soto",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "flag-icon-css": "^3.4.5",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
